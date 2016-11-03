@@ -13,7 +13,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
 
-<span class="hl">UPDATE (2016/2/13):</span>
+<span style="color:red">UPDATE (2016/2/13):</span>
 
 The return format had been changed to zero-based indices. Please read the above updated description carefully.
 
