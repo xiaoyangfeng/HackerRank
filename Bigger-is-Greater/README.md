@@ -13,31 +13,32 @@ For each testcase, output a string lexicographically bigger than  in a separate 
 
 Sample Input
 
-5
-ab
-bb
-hefg
-dhck
-dkhc
-Sample Output
+5  
+ab  
+bb  
+hefg  
+dhck  
+dkhc  
 
-ba
-no answer
-hegf
-dhkc
-hcdk
-Explanation
+Sample Output  
 
-Test case 1: 
-There exists only one string greater than ab which can be built by rearranging ab. That is ba.
-Test case 2: 
-Not possible to rearrange bb and get a lexicographically greater string.
-Test case 3: 
-hegf is the next string lexicographically greater than hefg.
-Test case 4: 
-dhkc is the next string lexicographically greater than dhck.
-Test case 5: 
-hcdk is the next string lexicographically greater than dkhc.
+ba  
+no answer  
+hegf  
+dhkc  
+hcdk  
+Explanation  
+
+Test case 1:   
+There exists only one string greater than ab which can be built by rearranging ab. That is ba.  
+Test case 2:   
+Not possible to rearrange bb and get a lexicographically greater string.  
+Test case 3:   
+hegf is the next string lexicographically greater than hefg.  
+Test case 4:   
+dhkc is the next string lexicographically greater than dhck.  
+Test case 5:   
+hcdk is the next string lexicographically greater than dkhc.  
 
 ```java
  static String rearrangeWord(String word) {
