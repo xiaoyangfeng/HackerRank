@@ -41,7 +41,7 @@ Test case 5:
 hcdk is the next string lexicographically greater than dkhc.  
 
 ```diff
--以下不是最优解，除去sort的部分，交换的部分是O(n2),最优解是2n
+以下不是最优解，除去sort的部分，交换的部分是O(n2),最优解是2n
 ```
 
 ```java
