@@ -21,7 +21,12 @@ The return format had been changed to zero-based indices. Please read the above 
 
 --------------------------可以上传code below this line或者单独上传java------------------------------------------------
 
-Yang's solution, 不清楚是不是还有更优的解法
+Yang's solution
+```diff
+-不清楚是不是还有更优的解法
+```
+[最优解请戳这里](https://leetcode.com/articles/two-sum/)
+
 ```java
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
