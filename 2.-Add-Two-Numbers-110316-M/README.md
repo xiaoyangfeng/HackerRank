@@ -58,3 +58,66 @@ public class Solution {
     }
 }
 ```
+
+String解法
+
+```java
+public class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+         String string1="";
+         while(l1!=null){
+            string1+= l1.val;
+            l1=l1.next;
+        }
+         String string2="";
+         while(l2!=null){
+            string2+= l2.val;
+            l2=l2.next;
+        }
+        int length1=string1.length();
+        int length2=string2.length();
+        int max=length1;
+        if (length1<length2){
+            max=length2;
+        }
+        int num1=0;
+        int num2=0;
+        int rest=0;
+        int sum=0;
+        num1=Integer.parseInt(string1.substring(0, 1));
+        num2=Integer.parseInt(string2.substring(0, 1));
+        sum=num1+num2;
+        
+        ListNode result=new ListNode(sum%10);
+        rest=sum/10;
+        if(rest==0&&length1==1&&length2==1){
+            return result;
+        }
+        result.next=new ListNode(0);
+        ListNode pointer=result.next;
+        
+        for(int i=1;i<=max;i++){
+            if(i<length1){
+                num1=Integer.parseInt(string1.substring(i, i+1));
+            }else{
+                num1=0;
+            }
+            if(i<length2){
+                num2=Integer.parseInt(string2.substring(i, i+1));
+            }else{
+                num2=0;
+            }
+            sum=num1+num2+rest;
+            pointer.val=sum%10;
+            rest=sum/10;
+            if(rest==0&&i>=max-1){
+                 break;
+            }
+            pointer.next=new ListNode(0);
+            pointer=pointer.next;
+        }
+        return result; 
+    }
+}
+```
+
