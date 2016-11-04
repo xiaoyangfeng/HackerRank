@@ -29,7 +29,9 @@ Return:
     "FizzBuzz"
 ]
 ```
-
+```diff
++官方没有提供最优解！如果你得算法awesome，请share给大家~
+```
 Yang's solution
 ```java
 public class Solution {
