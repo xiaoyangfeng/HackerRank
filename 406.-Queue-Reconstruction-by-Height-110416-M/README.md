@@ -15,6 +15,8 @@ Input:
 Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 ```
+[非官方最优解-只有6行](https://discuss.leetcode.com/topic/66307/6-line-java-solution)
+
 ```diff
 +Yang's solution
 +请注意此方法通不过大量数据的时间限制 233333333333333
