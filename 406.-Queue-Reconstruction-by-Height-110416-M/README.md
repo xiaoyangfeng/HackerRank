@@ -15,3 +15,52 @@ Input:
 Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 ```
+```diff
++Yang's solution
++请注意此方法通不过大量数据的时间限制 233333333333333
+```
+
+```java
+public class Solution {
+public static int[][] reconstructQueue(int[][] people) {
+        LinkedList<int[]> list = new LinkedList<>(Arrays.asList(people));
+        int j = 1;
+        boolean insert = false;
+
+        for (int i = 0; i < list.size() - 1;) {
+            if (list.get(i)[0] > list.get(j)[0] || list.get(i)[0] == list.get(j)[0] && list.get(i)[1] < list.get(j)[1]) {
+                if (insert) {
+                    list.add(j - 1, list.remove(i));
+                    j=i+1;
+                    insert = false;
+                    continue;
+                }
+                if (j == list.size() - 1) {
+                    i++;
+                    j=i+1;
+                    continue;
+                }
+                j++;
+
+            } else {
+                insert = true;
+                if (j == list.size() - 1) {
+                    list.addLast(list.remove(i));
+                    j = i + 1;
+                    insert = false;
+                    continue;
+                }
+                j++;
+            }
+        }
+        for (int i = 1; i < list.size(); i++) {
+            int point = list.get(i)[1];
+            if (point != i) {
+                list.add(point, list.remove(i));
+            }
+        }
+        return list.toArray(new int[0][0]);
+
+    }
+}
+```
