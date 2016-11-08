@@ -26,6 +26,9 @@ Could you do it in one-pass, using only O(1) extra memory and without modifying 
 ```diff
 +感觉这是这几天的最简单M难度的题，还没看最优解
 ```
+[最优解](https://discuss.leetcode.com/topic/62970/simple-java-solution/2)
+
+
 Yang's solution
 ```java
 public int countBattleships(char[][] board) {
