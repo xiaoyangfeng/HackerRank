@@ -22,3 +22,30 @@ XXXX
 This is an invalid board that you will not receive - as battleships will always have a cell separating between them.  
 Follow up:   
 Could you do it in one-pass, using only O(1) extra memory and without modifying the value of the board?
+
+```diff
++感觉这是这几天的最简单M难度的题，还没看最优解
+```
+Yang's solution
+```java
+public int countBattleships(char[][] board) {
+        int rowNum = board.length;
+        int columeNum = board[0].length;
+        int result = 0;
+        boolean[] columeBoolean = new boolean[columeNum];
+        for (int i = 0; i < rowNum; i++) {
+            boolean rowBoolean = false;
+            for (int j = 0; j < columeNum; j++) {
+                if(board[i][j] == '.'){
+                    rowBoolean = false;
+                    columeBoolean[j] = false;
+                }else if (board[i][j] == 'X'&&!rowBoolean && !columeBoolean[j] ) {
+                    result++;
+                    rowBoolean = true;
+                    columeBoolean[j] = true;
+                } 
+            }
+        }
+        return result;
+    }
+```
