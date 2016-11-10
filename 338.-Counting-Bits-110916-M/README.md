@@ -17,6 +17,9 @@ Hint:
 
 You should make use of what you have produced already.
 
+[非作弊最优解！！](https://discuss.leetcode.com/topic/40162/three-line-java-solution/2)
+
+
 ```diff
 +我的作弊解法
 ```
