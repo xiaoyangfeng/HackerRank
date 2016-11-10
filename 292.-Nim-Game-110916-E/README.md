@@ -10,3 +10,16 @@ For example, if there are 4 stones in the heap, then you will never win the game
 Hint:
 
 If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?
+
+[最优解](https://leetcode.com/articles/nim-game/)
+
+Yang's solution
+```java
+public class Solution {
+    public boolean canWinNim(int n) {
+        if(n%4==0)
+        return false;
+        return true;
+    }
+}
+```
