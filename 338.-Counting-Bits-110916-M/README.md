@@ -16,3 +16,17 @@ Can you do it like a boss? Do it without using any builtin function like __built
 Hint:  
 
 You should make use of what you have produced already.
+
+```diff
++我的作弊解法
+```
+```java
+        public int[] countBits(int num) {
+            int[] result=new int[num+1];
+            for(int i=0;i<=num;i++){
+            result[i]= Integer.bitCount(i);
+
+            }
+            return result;
+       } 
+```
