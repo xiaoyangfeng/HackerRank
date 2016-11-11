@@ -27,3 +27,28 @@ A = [1, 2, 3, 4]
 
 return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 ```
+Yang's solution
+```java
+    public int numberOfArithmeticSlices(int[] A) {
+        int result = 0;
+        int diff = 0;
+        int count = 1;
+        for (int i = 1; i < A.length; i++) {
+            if (A[i] - A[i - 1] != diff) {
+                if (count >= 3) {
+                    int n = count - 2;
+                    result += n * (n + 1) / 2;
+                }
+                diff = A[i] - A[i - 1];
+                count = 2;
+            } else {
+                count++;
+            }
+        }
+        if (count >= 3) {
+            int n = count - 2;
+            result += n * (n + 1) / 2;
+        }
+        return result;
+    }
+```
