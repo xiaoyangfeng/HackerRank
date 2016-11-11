@@ -6,6 +6,11 @@ Given an array of integers, every element appears twice except for one. Find tha
 Note:  
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
+```diff
++屌屌屌，又涨新姿势了
+```
+[猛戳](https://discuss.leetcode.com/topic/1916/my-o-n-solution-using-xor)
+
 
 Yang's Solution
 ```java
