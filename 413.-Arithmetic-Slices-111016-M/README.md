@@ -27,6 +27,9 @@ A = [1, 2, 3, 4]
 
 return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 ```
+[最优解依然牛B！](https://discuss.leetcode.com/topic/63302/simple-java-solution-9-lines-2ms/2)
+
+
 Yang's solution
 ```java
     public int numberOfArithmeticSlices(int[] A) {
