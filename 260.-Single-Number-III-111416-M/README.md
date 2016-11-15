@@ -10,6 +10,13 @@ Given nums = [1, 2, 1, 3, 2, 5], return [3, 5].
 Note:  
 The order of the result is not important. So in the above example, [5, 3] is also correct.  
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
+```diff
++最优解不太好理解
++一旦你理解了，你对二进制的运算会更上一层楼
+```
+[看来本科计算机的基础教育还是很有必要的](https://discuss.leetcode.com/topic/21605/accepted-c-java-o-n-time-o-1-space-easy-solution-with-detail-explanations/2)
+
+
 
 Yang's solution
 
