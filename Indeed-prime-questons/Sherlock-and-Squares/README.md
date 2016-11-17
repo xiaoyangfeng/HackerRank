@@ -34,3 +34,22 @@ Explanation
 
 Test Case #00: In range ,  and  are the two square numbers. 
 Test Case #01: In range , there are no square numbers.
+
+```diff
++上solution
+```
+```java
+public static void main(String[] args) {
+		// Enter your code here. Read input from STDIN. Print output to STDOUT.
+		// Your class should be named Solution.
+		Scanner in = new Scanner(System.in);
+		in.next();
+		while (in.hasNext()) {
+			int a = in.nextInt();
+			// System.out.println(a);
+			int b = in.nextInt();
+			// System.out.println(b);
+			System.out.println((int) (Math.floor(Math.sqrt(b)) - Math.ceil(Math.sqrt(a))) + 1);
+		}
+	}
+ ```
