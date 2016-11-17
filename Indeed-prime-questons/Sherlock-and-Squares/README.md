@@ -20,14 +20,16 @@ Output Format
 For each test case, print the required answer in a new line.
 
 Sample Input
-
+```
 2
 3 9
 17 24
+```
 Sample Output
-
+```
 2
 0
+```
 Explanation
 
 Test Case #00: In range ,  and  are the two square numbers. 
