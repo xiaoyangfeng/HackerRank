@@ -9,7 +9,8 @@ Requirements:
 - INC x d : add the new value(d) from index 0 to x elements, then print the value of "peak"
 
 - Example
-  input   :
+```
+  input   :  
                8
                PUSH 1
                POP
@@ -28,7 +29,7 @@ Requirements:
                6
                4
                9
-
+```
  the values in the Super Stack
  peak       9
                5
